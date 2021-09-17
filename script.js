@@ -77,10 +77,10 @@ close_nav.addEventListener('click', (event) => {
   var swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,
-    // autoplay: {
-    //     delay: 4500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+    },
       slidesPerView: 2,
       spaceBetween: 30,
       freeMode: true,
