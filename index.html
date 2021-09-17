@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <script src="https://kit.fontawesome.com/0387b73b4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>BenGad</title>
+</head>
+<body id="body">
+    <header>
+        <div id="header">
+            <nav id="desktop-nav">
+                <ul class="header-links">
+                    <li class="nav-link"><a class="link" href="#">אודות החברה</a></li>
+                    <li class="nav-link pro-link"><a class="link" href="#">פרוייקטים</a><i class="fas fa-angle-down"></i>
+                        <ul id="projects">
+                            <li class="project-link"><a class="link1" href="#">פרוייקטים בביצוע</a></li>
+                            <li class="project-link"><a class="link1" href="#">פרוייקטים עתידיים</a></li>
+                            <li class="project-link"><a class="link1" href="#">פרוייקטים מאוכלסים</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link"><a class="link" href="#">לקוחות שלנו</a></li>
+                    <li class="nav-link"><a class="link" href="#">צור קשר</a></li>
+                    <li><img id="logo" src="images/bengad.jpg" alt=""></li>
+                </ul>
+                
+            </nav>
+        </div>
+        <div id="mobile-header">
+            <li id="logo-li" style="list-style-type: none;"><img id="logo" src="images/bengad.jpg" alt=""></li>
+            <div id="container-nav">
+                <i id="close" class="fas fa-times"></i>
+                <div id="burger">
+                    <div class="nav-bar"></div>
+                    <div class="nav-bar" id="bar2"></div>
+                    <div class="nav-bar"></div>
+                </div>
+            </div>
+            <nav id="mobile-nav" class="active">
+                <ul class="header-links">
+                    <li class="nav-link"><a class="link" href="#">אודות החברה</a></li>
+                    <li class="nav-link pro-link"><div id="contain"><a class="link" href="#">פרוייקטים</a><i class="fas fa-angle-down"></i></div>
+                        <ul id="mobile-projects" class="active">
+                            <li class="project-link"><a class="link1" href="#">פרוייקטים בביצוע</a></li>
+                            <li class="project-link"><a class="link1" href="#">פרוייקטים עתידיים</a></li>
+                            <li class="project-link"><a class="link1" href="#">פרוייקטים מאוכלסים</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link pro-link"><a class="link" href="#">לקוחות שלנו</a></li>
+                    <li class="nav-link"><a class="link" href="#">צור קשר</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="video">
+        <video id="hero" controls="" controls loop="" autoplay="" muted="">
+            <source src="images/video12.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </section>
+    <section id="mobile-video">
+        <video id="mobile-hero" controls="" controls loop="" autoplay="" muted="">
+            <source src="images/bengad-mobile.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </section>
+    <main>
+        <section id="info">
+            <h1 class="title big-title">בנגד בונים בתשוקה בכל התחומים</h1>
+            <div class="container">
+                <div class="build-type">
+                    <h2>בואו לגור איתנו</h2>
+                    <p>בנגד בע"מ נוסדה בשנת 1986. מאז היווסדה יזמה וביצעה החברה פרוייקטים הנדסיים רבים, ביניהם שכונות מגורים ומבנים בחיפה והקריות, יוקנעם, פרדס חנה, עפולה ועוד. החברה מתמחה הן בבניה למגורים והן בבניה לתעשיה, מבני ציבור, תעשית היי-טק וכו'. לחברה לקוחות רבים הן במגזר הפרטי והן במגזר הציבורי</p>
+                    <h3 class="title"><a class="link title" href="#">קרא עוד</a></h3>
+                </div> 
+                <div class="build-type">  
+                    <h2>בונים עתיד בתעשיה</h2>
+                    <p>בנגד בע"מ נוסדה בשנת 1986. מאז היווסדה יזמה וביצעה החברה פרוייקטים הנדסיים רבים, ביניהם שכונות מגורים ומבנים בחיפה והקריות, יוקנעם, פרדס חנה, עפולה ועוד. החברה מתמחה הן בבניה למגורים והן בבניה לתעשיה, מבני ציבור, תעשית היי-טק וכו'. לחברה לקוחות רבים הן במגזר הפרטי והן במגזר הציבורי</p>
+                    <h3 class="title"><a class="link title" href="#">קרא עוד</a></h3>
+                </div> 
+            </div>
+        </section>
+        <section id="projects-in-market">
+            <h1 class="title pros big-title">פרוייקטים בביצוע</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1
+                      <div class="bottom"></div>
+                  </div>
+                  <div class="swiper-slide">Slide 2
+                    <div class="bottom"></div>
+                  </div>
+                  <div class="swiper-slide">Slide 3
+                    <div class="bottom"></div>
+                  </div>
+                  <div class="swiper-slide">Slide 4
+                    <div class="bottom"></div>
+                  </div>
+                  <div class="swiper-slide">Slide 5
+                    <div class="bottom"></div>
+                  </div>
+                  <div class="swiper-slide">Slide 6
+                    <div class="bottom"></div>
+                  </div>
+                  <div class="swiper-slide">Slide 7
+                    <div class="bottom"></div>
+                  </div>
+                </div>
+            </div>
+            <h3 class="title rest"><a class="link2" href="#">לכל הפרוייקטים שלנו</a></h4>
+        </section>
+        <section id="last">
+            <i class="smile">החיוך שלכם , ההצלחה שלנו</i>
+        </section>
+    </main>
+    <footer>
+        <ul class="header-links header-footer-links">
+            <li class="nav-link"><a class="link1" href="#"><i class="fas fa-phone"></i>04-123456</a></li>
+            <li class="nav-link fot-link"><a class="link1" href="#">אודות החברה</a></li>
+            <li class="nav-link pro-link fot-link"><a class="link1" href="#">פרוייקטים</a></li>
+            <li class="nav-link fot-link"><a class="link1" href="#">לקוחות שלנו</a></li>
+            <li class="nav-link fot-link"><a class="link1" href="#">צור קשר</a></li>
+        </ul>
+            <h5 class="author">&copy; &nbsp; Lee Meloul</h5>
+            <span>2021</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
