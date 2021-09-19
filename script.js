@@ -5,6 +5,8 @@ const burger = document.getElementById('burger');
 const mobile_nav = document.getElementById('mobile-nav');
 const body = document.getElementById('body');
 const close_nav = document.getElementById('close');
+const swiper_slide = document.querySelector('.swiper-wrapper');
+
 
 
 
@@ -89,5 +91,21 @@ close_nav.addEventListener('click', (event) => {
         clickable: true,
       },
     });
+
+    
+
+      swiper_slide.addEventListener('mouseover', (e) => {
+        swiper.autoplay.stop();
+      },false);
+
+      swiper_slide.addEventListener('mouseout', (e) => {
+        swiper.autoplay.start();
+      })
+    
+
+        
+
+
+      
 
     

@@ -84,6 +84,7 @@ div#mobile-header {
     background-color:#01A1BB;
     color: white;
     margin: 0.8rem 2.5rem 0 0;
+    position: relative;
     z-index: 3;
 }
 
@@ -144,6 +145,8 @@ main {
 
 #hero {
     width: 100vw;
+    position: relative;
+    z-index: 2;
 }
 
 div.container {
@@ -236,7 +239,6 @@ section#projects-in-market {
     width: 25vw;
     height: 25vw;
     position: relative;
-    border: 1px solid #707070;
 }
 
 .swiper-slide img {
@@ -258,12 +260,80 @@ section#projects-in-market {
     width: 40%;
 }
 
+.single-project {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.single-project .img {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/test.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.single-project:hover {
+    margin-top: -20px;
+    border: 2px solid white;
+    transition: all 0.5s, border 0.3s;
+}
+
+.single-project:hover div.bottom {
+    display: none;
+}
+
+
+
+.single-project:hover .img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.single-project p.shit {
+    display: none;
+}
+
+p.shit {
+    margin: 0;
+    position: absolute;
+    top: calc(50% - 9px);
+    left: calc(50% - 39px);
+}
+
+p.text {
+    margin: 0;
+    max-height: 55px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 9px);
+    display: none;
+    color: white;
+    z-index: 3;
+}
+
+.single-project:hover p.text {
+    display: initial;
+}
+
 div.bottom {
     position: absolute;
     bottom: 0;
     height: 150px;
     width: 100%;
     background-color: #01A1BB;
+    z-index: 4;
 }
 
 #last {
@@ -444,7 +514,7 @@ h5.author {
     }
 
     .build-type {
-        width: 100vw;
+        width: 80vw;
     }
 
     .swiper.mySwiper {
